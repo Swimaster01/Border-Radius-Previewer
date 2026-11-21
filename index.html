@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border-radius-previewer</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <main>
+      <h1> Border Radius Preview </h1>
+      <div id="preview"></div>
+
+
+<div class="controls">
+
+  <div>
+    <label for="top-left">Top Left</label>
+    <input type="range" id="top-left" min="0" max="200" value="20">
+  </div>
+
+  <div>
+    <label for="top-right">Top Right</label>
+    <input type="range" id="top-right" min="0" max="200" value="20">
+  </div>
+
+  <div>
+    <label for="bottom-right">Bottom Right</label>
+    <input type="range" id="bottom-right" min="0" max="200" value="20">
+  </div>
+
+  <div>
+    <label for="bottom-left">Bottom Left</label>
+    <input type="range" id="bottom-left" min="0" max="200" value="20">
+  </div>
+
+</div>
+<div class="output">
+  <h2>CSS Output</h2>
+  <code id="css-output">border-radius: 20px 20px 20px 20px;</code>
+  <button id="copy-btn">Copy CSS</button>
+</div>
+    </main>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
